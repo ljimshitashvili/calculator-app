@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    background-color: #3A4663;
+}
+
+.body-two{
+    background-color: #E6E6E6;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.theme{
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+.theme h2{
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.theme-two h2,
+.theme.two h3{
+    color: #36362C;
+}
+
+
+
+
+.theme-container h3{
+    text-align: end;
+    margin-bottom: 5px;
+    letter-spacing: 7px;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+header h1{
+    border-left: 7px;
+    font-size: 32px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+}
+
+.button-background{
+    width: 71px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #242D44;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.button-background-two{
+    background-color: #D2CDCD;
+    justify-content: center;
+}
+
+.button{
+    background-color: #D03F2F;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+main{
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.output{
+    max-width: 540px;
+    width: 100%;
+    border-radius: 10px;
+    height: 88px;
+    background-color: #181F33;
+    margin-bottom: 24px;
+}
+
+.output-two,
+.output-two h1{
+    background-color: #ffffff;
+    color: #36362C;
+}
+
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    box-sizing: border-box;
+    gap: 13px;
+    background-color: #242D44;
+}
+
+.input-two{
+    background-color: #D2CDCD;
+}
+
+button{
+    width: 60px;
+    height: 64px;
+    box-shadow: inset 0px -4px 0px #B3A497;
+    border: none;
+    border-radius: 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #434A59;
+}
+
+.input-two button{
+    background-color: #E5E4E1;
+    box-shadow: inset 0px -4px 0px #A79E91;
+    color: #36362C;
+}
+
+button[value="del"]{
+    box-shadow: inset 0px -4px 0px #414E73;
+    background-color: #647198;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.input-two button[value="del"],
+.input-two button[value="reset"]{
+    background-color: #378187;
+    box-shadow: inset 0px -4px 0px #1B6066;
+    color: #ffffff;
+}
+
+button[value="reset"]{
+    width: 133px;
+    height: 64px;
+    background: #647198;
+    box-shadow: inset 0px -4px 0px #414E73;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+button[value="="]{
+    width: 133px;
+    height: 64px;
+    background: #D03F2F;
+    box-shadow: inset 0px -4px 0px #93261A;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.input-two button[value="="]{
+    background-color: #C85402;
+    box-shadow: inset 0px -4px 0px #873901;
+    color: #ffffff;
+}
+
