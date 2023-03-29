@@ -4,11 +4,18 @@ body{
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
     background-color: #3A4663;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .body-two{
     background-color: #E6E6E6;
 
+}
+
+.body-three{
+    background-color:  #17062A;
 }
 
 header{
@@ -17,6 +24,8 @@ header{
     align-items: center;
     padding: 24px;
     box-sizing: border-box;
+    max-width: 327px;
+    width: 100%;
 }
 
 .theme{
@@ -25,7 +34,7 @@ header{
     align-items: center;
 }
 
-.theme h2{
+header h2{
     font-size: 12px;
     line-height: 11px;
     text-align: center;
@@ -34,15 +43,22 @@ header{
     text-transform: uppercase;
 }
 
-.theme-two h2,
-.theme.two h3{
+.header-two h1,
+.header-two h2,
+.header-two h3{
     color: #36362C;
+}
+
+.header-three h1,
+.header-three h2,
+.header-three h3{
+    color: #FFE53D;
 }
 
 
 
 
-.theme-container h3{
+header h3{
     text-align: end;
     margin-bottom: 5px;
     letter-spacing: 7px;
@@ -69,11 +85,17 @@ header h1{
     align-items: center;
     padding: 0 5px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .button-background-two{
     background-color: #D2CDCD;
     justify-content: center;
+}
+
+.button-background-three{
+    background-color: #1E0936;
+    justify-content: end;
 }
 
 .button{
@@ -83,13 +105,24 @@ header h1{
     border-radius: 50%;
 }
 
+.button-two{
+    background: #C85402;
+}
+
+.button-three{
+    background: #00DED0;
+}
+
 main{
     padding: 0 24px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .output{
-    max-width: 540px;
+    max-width: 327px;
     width: 100%;
     border-radius: 10px;
     height: 88px;
@@ -103,6 +136,12 @@ main{
     color: #36362C;
 }
 
+.output-three,
+.output-three h1{
+    background: #1E0936;
+    color: #FFE53D;
+}
+
 .input{
     display: flex;
     flex-wrap: wrap;
@@ -110,10 +149,16 @@ main{
     box-sizing: border-box;
     gap: 13px;
     background-color: #242D44;
+    max-width: 327px;
+    border-radius: 10px;
 }
 
 .input-two{
     background-color: #D2CDCD;
+}
+
+.input-three{
+    background: #1E0936;
 }
 
 button{
@@ -137,7 +182,12 @@ button{
     color: #36362C;
 }
 
-button[value="del"]{
+.input-three button{
+    background: #331C4D;
+    box-shadow: inset 0px -4px 0px #881C9E;
+}
+
+button #del{
     box-shadow: inset 0px -4px 0px #414E73;
     background-color: #647198;
     color: #FFFFFF;
@@ -145,14 +195,21 @@ button[value="del"]{
     line-height: 18px;
 }
 
-.input-two button[value="del"],
-.input-two button[value="reset"]{
+.inputB-two #del,
+.inputB-two #reset{
     background-color: #378187;
     box-shadow: inset 0px -4px 0px #1B6066;
     color: #ffffff;
 }
 
-button[value="reset"]{
+.inputB-three #del,
+.inputB-three #reset{
+    background: #56077C;
+    box-shadow: inset 0px -4px 0px #BE15F4;
+    color: #ffffff;
+}
+
+button #reset{
     width: 133px;
     height: 64px;
     background: #647198;
@@ -161,7 +218,7 @@ button[value="reset"]{
     color: #ffffff;
 }
 
-button[value="="]{
+#equal{
     width: 133px;
     height: 64px;
     background: #D03F2F;
@@ -170,9 +227,15 @@ button[value="="]{
     color: #ffffff;
 }
 
-.input-two button[value="="]{
+.input-twoB #reset{
     background-color: #C85402;
     box-shadow: inset 0px -4px 0px #873901;
     color: #ffffff;
+}
+
+.input-twoB #equal{
+    background: #00DED0;
+    box-shadow: inset 0px -4px 0px #6CF9F1; 
+    color: #1A2327;
 }
 
