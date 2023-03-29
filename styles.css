@@ -128,6 +128,19 @@ main{
     height: 88px;
     background-color: #181F33;
     margin-bottom: 24px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.output h1{
+    font-size: 40px;
+    line-height: 37px;
+    text-align: right;
+    letter-spacing: -0.6px;
+    color: #FFFFFF;
 }
 
 .output-two,
@@ -174,9 +187,10 @@ button{
     text-align: center;
     letter-spacing: -0.5px;
     color: #434A59;
+    cursor: pointer;
 }
 
-.input-two button{
+.inputB-two button{
     background-color: #E5E4E1;
     box-shadow: inset 0px -4px 0px #A79E91;
     color: #36362C;
@@ -187,12 +201,33 @@ button{
     box-shadow: inset 0px -4px 0px #881C9E;
 }
 
-button #del{
+#del{
     box-shadow: inset 0px -4px 0px #414E73;
     background-color: #647198;
     color: #FFFFFF;
     font-size: 20px;
     line-height: 18px;
+}
+
+.inputB-two{
+    background: #D2CDCD
+}
+
+.new-buttons-3{
+    background: #331C4D;
+    box-shadow: inset 0px -4px 0px #881C9E;
+    color: #FFE53D;
+}
+
+.new-buttons-2{
+    background: #E5E4E1;
+    box-shadow: inset 0px -4px 0px #A79E91;
+    color: #36362C;
+}
+
+.inputB-three{
+    background: #1E0936;
+    color: #FFE53D;
 }
 
 .inputB-two #del,
@@ -209,7 +244,7 @@ button #del{
     color: #ffffff;
 }
 
-button #reset{
+#reset{
     width: 133px;
     height: 64px;
     background: #647198;
@@ -227,15 +262,14 @@ button #reset{
     color: #ffffff;
 }
 
-.input-twoB #reset{
-    background-color: #C85402;
+.inputB-two #equal{
+    background: #C85402;
     box-shadow: inset 0px -4px 0px #873901;
     color: #ffffff;
 }
-
-.input-twoB #equal{
+.inputB-three #equal{
     background: #00DED0;
-    box-shadow: inset 0px -4px 0px #6CF9F1; 
+    box-shadow: inset 0px -4px 0px #6CF9F1;
     color: #1A2327;
 }
 
