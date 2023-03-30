@@ -158,9 +158,9 @@ main{
 .input{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 24px;
     box-sizing: border-box;
-    gap: 13px;
     background-color: #242D44;
     max-width: 327px;
     border-radius: 10px;
@@ -188,6 +188,7 @@ button{
     letter-spacing: -0.5px;
     color: #434A59;
     cursor: pointer;
+    margin-bottom: 13px;
 }
 
 .inputB-two button{
@@ -273,3 +274,27 @@ button{
     color: #1A2327;
 }
 
+@media (min-width: 1024px){
+    header{
+        max-width: 540px;
+    }
+
+    .output{
+        max-width: 540px;
+    }
+
+    .input{
+        max-width: 540px;
+        gap: 25px;
+        padding: 32px 30px;
+    }
+
+    button{
+        width: 101px;
+        height: 64px;
+    }
+
+    #reset, #equal{
+        width: 227px;
+    }
+}
