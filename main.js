@@ -14,25 +14,46 @@ const outputTxt = output.firstElementChild;
 let count = 3;
 let firstInput;
 let secondInput;
+let operator;
 let sum;
+
 
 const start = () => {
 
-    inputValues();
+    calculate();
 
 }
 
-const add = () => {
-    
-}
-
-const inputValues = () => {
+const calculate = () => {
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', () => {
-            outputTxt.textContent += buttons[i].value;
-            addSpaceBtwChars();
+            let btnValue = buttons[i].value;
+            if(btnValue >= 0 && btnValue <= 9 || btnValue === "."){
+                outputTxt.textContent += btnValue;
+            }else if (btnValue === "+" || btnValue === "-" || btnValue === "x" || btnValue === "/") {
+                firstInput = Number(outputTxt.textContent);
+                outputTxt.textContent = "";
+                operator = btnValue;
+                console.log("firstInput: " + firstInput);
+            }else if(btnValue === "="){
+                secondInput = Number(outputTxt.textContent);
+                switch (operator){
+                    case '+': 
+                        sum = firstInput + secondInput;
+                        break;
+                    case "-":
+                        sum = firstInput - secondInput;
+                        break;
+                    case "x":
+                        sum = firstInput * secondInput;
+                        break;
+                    case "/":
+                        sum = firstInput * secondInput;
+                        break; 
+                }
+                outputTxt.textContent = sum;
+            }
         });
-
     }
 }
 
@@ -45,8 +66,6 @@ const deleteOne = () => {
 const deleteAll = () => {
     outputTxt.textContent = "";
 }
-
-
 
 buttonBackground.addEventListener('click', () => {
     count++;
