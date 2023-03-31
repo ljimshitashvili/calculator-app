@@ -1,0 +1,78 @@
+$theme1:(
+    bodyColor: #3A4663,
+    switcherBackgroundColor: #242D44,
+    switcherButtonColor: #D03F2F,
+    textColor: white,
+    outputBackgroundColor: #181F33,
+    outpuTextColor: white,
+    inputBackgroundColor:#242D44,
+    buttonColor: #EAE3DC,
+    delAndResetButtonColor: #647198,
+    equalButtonColor: #D03F2F,
+    buttonTextColor: #434A59,
+    delAndResetTextColor: white,
+    equalTextColor: white
+);
+
+$theme2:(
+    bodyColor: #E6E6E6,
+    switcherBackgroundColor: #D2CDCD,
+    switcherButtonColor: #C85402,
+    textColor: #36362C,
+    outputBackgroundColor: #EEEEEE,
+    outpuTextColor: #36362C,
+    inputBackgroundColor:#E5E4E1,
+    buttonColor: #E5E4E1,
+    buttonShadow: inset 0px -4px 0px #A79E91,
+    delAndResetButtonColor: #378187,
+    delAndResetShadow: inset 0px -4px 0px #1B6066,
+    equalButtonColor: #C85402,
+    equalButtonShadow: nset 0px -4px 0px #873901,
+    buttonTextColor: #36362C,
+    delAndResetTextColor: white,
+    equalTextColor: white
+);
+
+
+$theme3:(
+    bodyColor: #17062A,
+    switcherBackgroundColor: #1E0936,
+    switcherButtonColor: #00DED0,
+    textColor: #FFE53D,
+    outputBackgroundColor: #1E0936,
+    outpuTextColor: #FFE53D,
+    inputBackgroundColor:#1E0936,
+    buttonColor: #331C4D,
+    buttonShadow: inset 0px -4px 0px #881C9E,
+    delAndResetButtonColor: #56077C,
+    delAndResetShadow: inset 0px -4px 0px #BE15F4,
+    equalButtonColor: #00DED0,
+    equalButtonShadow: inset 0px -4px 0px #6CF9F1,
+    buttonTextColor: #FFE53D,
+    delAndResetTextColor: white,
+    equalTextColor: #1A2327
+);
+
+
+
+$sizeList: (1, 2, 3);
+$colorList: (1, 2, 3);
+
+%center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin headerText($name){
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.5px;
+    @if($name == "h1"){
+        font-size: 32px;
+        line-height: 29px;
+    }@else{
+        font-size: 12px;
+        line-height: 11px;
+    }
+}

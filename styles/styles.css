@@ -1,0 +1,236 @@
+@import 'https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap';
+body main .input button, body main .output, body main, body header .button-background, body header .theme, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  flex-direction: column;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+body header {
+  width: 100%;
+  max-width: 327px;
+  padding: 35px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+body header h1 {
+  font-size: 32px;
+}
+body header h2 {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+body header h3 {
+  letter-spacing: 7px;
+  line-height: 11px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-align: right;
+}
+body header .theme {
+  gap: 31px;
+}
+body header .button-background {
+  width: 71px;
+  height: 26px;
+  border-radius: 13px;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body header .button1,
+body header .button2,
+body header .button3 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+body main {
+  padding: 0 24px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+body main .output {
+  max-width: 327px;
+  width: 100%;
+  border-radius: 10px;
+  height: 88px;
+  margin-bottom: 24px;
+  justify-content: end;
+  padding: 24px;
+  box-sizing: border-box;
+}
+body main .output h1 {
+  font-size: 40px;
+  line-height: 37px;
+  text-align: right;
+  letter-spacing: -0.6px;
+}
+body main .input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
+  max-width: 327px;
+  border-radius: 10px;
+}
+body main .input button {
+  width: 60px;
+  height: 64px;
+  border: none;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+body main .input #del {
+  font-size: 20px;
+  line-height: 18px;
+}
+body main .input #reset {
+  width: 133px;
+  height: 64px;
+  font-size: 20px;
+}
+body main .input #equal {
+  width: 133px;
+  height: 64px;
+  font-size: 20px;
+}
+
+.theme-1 {
+  background-color: #3A4663;
+}
+.theme-1 header h1, .theme-1 header h2, .theme-1 header h3 {
+  color: white;
+}
+.theme-1 header .button-background {
+  background-color: #242D44;
+}
+.theme-1 header .button1 {
+  background-color: #D03F2F;
+}
+.theme-1 header .button2 {
+  opacity: 1;
+}
+.theme-1 header .button3 {
+  opacity: 1;
+}
+.theme-1 main .output {
+  background-color: #181F33;
+}
+.theme-1 main .output h1 {
+  color: white;
+}
+.theme-1 main .input {
+  background-color: #242D44;
+}
+.theme-1 main .input button {
+  background-color: #EAE3DC;
+  color: #434A59;
+}
+.theme-1 main .input #del,
+.theme-1 main .input #reset {
+  background-color: #647198;
+  color: white;
+}
+.theme-1 main .input #equal {
+  background-color: #D03F2F;
+  color: white;
+}
+
+.theme-2 {
+  background-color: #E6E6E6;
+}
+.theme-2 header h1, .theme-2 header h2, .theme-2 header h3 {
+  color: #36362C;
+}
+.theme-2 header .button-background {
+  background-color: #D2CDCD;
+}
+.theme-2 header .button1 {
+  opacity: 1;
+}
+.theme-2 header .button2 {
+  background-color: #C85402;
+}
+.theme-2 header .button3 {
+  opacity: 1;
+}
+.theme-2 main .output {
+  background-color: #EEEEEE;
+}
+.theme-2 main .output h1 {
+  color: #36362C;
+}
+.theme-2 main .input {
+  background-color: #E5E4E1;
+}
+.theme-2 main .input button {
+  background-color: #E5E4E1;
+  color: #36362C;
+}
+.theme-2 main .input #del,
+.theme-2 main .input #reset {
+  background-color: #378187;
+  color: white;
+}
+.theme-2 main .input #equal {
+  background-color: #C85402;
+  color: white;
+}
+
+.theme-3 {
+  background-color: #17062A;
+}
+.theme-3 header h1, .theme-3 header h2, .theme-3 header h3 {
+  color: #FFE53D;
+}
+.theme-3 header .button-background {
+  background-color: #1E0936;
+}
+.theme-3 header .button1 {
+  opacity: 1;
+}
+.theme-3 header .button2 {
+  opacity: 1;
+}
+.theme-3 header .button3 {
+  background-color: #00DED0;
+}
+.theme-3 main .output {
+  background-color: #1E0936;
+}
+.theme-3 main .output h1 {
+  color: #FFE53D;
+}
+.theme-3 main .input {
+  background-color: #1E0936;
+}
+.theme-3 main .input button {
+  background-color: #331C4D;
+  color: #FFE53D;
+}
+.theme-3 main .input #del,
+.theme-3 main .input #reset {
+  background-color: #56077C;
+  color: white;
+}
+.theme-3 main .input #equal {
+  background-color: #00DED0;
+  color: #1A2327;
+}/*# sourceMappingURL=styles.css.map */
